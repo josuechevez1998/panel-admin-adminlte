@@ -494,6 +494,21 @@ return [
                 ],
             ],
         ],
+        'Moment.js' => [
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => '',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'vendor/moment/moment.min.js',
+                ]
+            ]
+        ]
     ],
 
     /*
