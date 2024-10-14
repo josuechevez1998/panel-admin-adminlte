@@ -21,6 +21,12 @@
                         @endif
 
                         {{ __('You are logged in!') }}
+
+
+                        <select class="js-example-basic-single" name="state">
+                            <option value="AL">Laravel</option>
+                            <option value="WY">Angular</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -34,5 +40,10 @@
 @stop
 
 @section('adminlte_js')
-    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+    <script>
+        console.log("Hi, I'm using the Laravel-AdminLTE package!");
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
 @stop
